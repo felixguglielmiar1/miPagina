@@ -1,0 +1,91 @@
+<section id="precios" class="divider">
+    <div class="container">
+      <div class="conten-center">
+       <br>
+        <h2> {{#each TyDestudios}}
+          {{#equal IDhtml "TP-23" }}{{valor_cfg}}{{/equal}}
+          {{/each}}</h2>
+        <p>{{#each TyDestudios}}
+          {{#equal IDhtml "TP-24" }}{{valor_cfg}}{{/equal}}
+          {{/each}}</p>
+      </div>
+      <div class="row">
+      {{#each EstudiosRe}}
+        <div class="col-md-12">
+          <div class="precios-contenedor">
+            
+            <div class="planes plan-basico">
+
+<div class="row">
+        <div class="col-md-12 conten-center">
+          <div class="menber-container">
+            <div class="menber-detalles">
+            </div>
+            <img src="images/Institucion-{{id}}.jpg" class="img-fluid" alt="estudiosR">
+          </div>
+        </div>
+        </div>
+<ul class="list-inline">
+                <li class="list-inline-item"><a href="/fac-esrs/{{id}}">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a></li>
+               <li class="list-inline-item"><a href="/web-esrs/{{id}}">
+                   <ion-icon name="logo-chrome"></ion-icon>
+                  </a></li>
+              </ul>
+              <h4>{{nombre_institucion}}</h4>
+              <h4><span>Certificado: </span>{{titulo_optenido}}</h4>
+              <h4><span>Disciplina: </span>{{disiplina}}</small></h4>
+              <div class="top-margin-pe">
+                <h4>Perfil del Egresado</h4>
+                <p><small>{{perfil_egresado}}</small></p>
+              </div>
+              <br>
+              <h4><span>Periodo Cursado: </span>{{periodo_curso}}</h4>
+              <br>
+              <div class='container'>
+  <div class="row">
+    {{#if link_c}}
+  <div class='col-3 aliniacion-c'><center> 
+                     <a class="btn btn-dark full-ancho top-margin-pe" onclick="cargaMultimedia('{{link_c}}')" >VER UBICACION</a>
+                     <div id="multimediaU"class="conten-center"></div>
+            
+             </center></div>   {{/if}}
+{{#equal M_certificado "1" }} 
+<div class="col-9 aliniacion-c"><center>
+              
+                 <a class="btn btn-dark full-ancho top-margin-pe" onclick="traeOoculta('cetificado-{{id}}')" >VER CERTIFICADO</a>
+<div class="row" id="cetificado-{{id}}" style="display:none;">
+        <div class="col-md-12 conten-center">
+          <div class="menber-container">
+            <div class="menber-detalles">
+            </div>
+            <img src="images/certificado-{{id}}.jpg" class="img-fluid">
+          </div>
+        </div>
+        </div>
+              
+              </center></div>
+              {{/equal}}
+</div>
+</div>
+      
+            </div>
+          </div>
+        </div>
+      {{/each}}
+      </div>
+    </div>
+
+  </section>
+  <script>
+function cargaMultimedia(htmlu){
+  document.getElementById("multimediaU").innerHTML=htmlu;
+}
+function traeOoculta(id){
+    if(document.getElementById(id).style.display=='none'){
+  document.getElementById(id).style.display = "block";
+    }else {document.getElementById(id).style.display = "none";}
+  }
+
+  </script>

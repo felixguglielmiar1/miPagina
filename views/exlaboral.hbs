@@ -1,0 +1,70 @@
+<section id="aboutus" class="btn-light-grey">
+    <div class="container">
+      <div class="conten-center">
+        <br>
+        <h2> <b> {{#each Exlaboral}}
+          {{#equal IDhtml "TP-21" }}{{valor_cfg}}{{/equal}}
+          {{/each}}</h2></b> </h2>
+        <p>{{#each Exlaboral}}
+          {{#equal IDhtml "TP-22" }}{{valor_cfg}}{{/equal}}
+          {{/each}}</p>
+      </div>
+      <div class="row">
+        <!--division de imagenes en misma columna-->
+        {{#each ExlaboralDeta}}
+        <div class="col-md-6">
+          <div class="menber-container">
+            <div class="menber-detalles">
+              <h5>{{nombre_emp}}</h5>
+              <!--descripcion de cada integrante con los enlaces respectivos a sus redes sociales-->
+              <span>{{cargo_des}}</span>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="/map-exLab/{{id}}">
+                    <ion-icon name="locate"></ion-icon>
+                  </a></li>
+                <li class="list-inline-item"><a href="/web-exLab/{{id}}">
+                   <ion-icon name="logo-chrome"></ion-icon>
+                  </a></li>
+              <div class="col-md-12"  onclick="traeOoculta('respo{{id}}')">
+      <a class="btn btn-dark full-ancho"><center>VER MÁS</center></a>
+    </div>    
+            </ul>
+            
+            </div>
+            <img src="images/menber-{{id}}.jpg" class="img-fluid" alt="member-{{id}}">
+          </div> 
+          
+<div id='respo{{id}}'class="container" style="display:none;">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="precios-contenedor">
+            <div class="planes plan-completo">
+              <center><h2>Tareas a Cargo</h7></center>
+             
+              <div class="planes-lihgt plan-basico">
+                <p> <span>
+                  {{tareas_real}}
+                 </span> </p>
+              
+              </div>
+
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+       </div>
+
+       {{/each}}
+        </div>
+        </div> 
+  </section>
+
+  <script>
+  function traeOoculta(id){
+    if(document.getElementById(id).style.display=='none'){
+  document.getElementById(id).style.display = "block";
+    }else {document.getElementById(id).style.display = "none";}
+  }
+</script>

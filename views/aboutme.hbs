@@ -1,0 +1,140 @@
+  <section class="divider">
+    <div class="container">
+      <div class="conten-center" >
+      <br>
+        <p> {{#each HomeTwo}}
+          {{#equal id "25" }}{{valor_cfg}}{{/equal}}
+          {{/each}}</p>
+      </div>
+      <div class="container">
+        {{#each traeAdic}}
+
+  <div class="precios-contenedor">
+  <center><h2>{{descripcionG}}</h2></center>
+
+    <div class="container">
+     
+      <div class="row">
+        {{#if link_u}} 
+        <div class="col-md-6 conten-center">
+          <div class="precios-contenedor">
+            <div class="planes plan-basico">
+              <span>{{descripcionU}}</span>
+              <br>
+              <a class="btn btn-dark full-ancho top-margin-pe" onclick="cargaMultimedia('{{link_u}}','multimediaU-{{id}}')">ver ubicacion</a>
+              <div id="multimediaU-{{id}}"class="conten-center"></div>
+            </div>
+          </div>
+        </div>
+        {{/if}}
+        {{#if linkC}}
+        <div class="col-md-6 conten-center">
+          <div class="precios-contenedor">
+            <div class="planes plan-completo">
+           <span>{{descripcionC}}</span>
+              <br>
+              <a  class="btn btn-light full-ancho top-margin-pe" onclick="cargaMultimedia('{{linkC}}','multimediaV-{{id}}')">ver video</a>
+              <div id="multimediaV-{{id}}"class="conten-center"></div>
+              
+            </div>
+          </div>
+        </div>
+{{/if}}
+      </div>
+    </div>
+</div>   
+{{/each}}
+</div>
+</div>
+<div class="container">
+      <div class="conten-center" >
+<h2> {{#each HomeTwo}}
+          {{#equal id "26" }}{{valor_cfg}}{{/equal}}
+          {{/each}}</h2>
+</div>
+</div>
+
+
+ <div class="row conten-center">
+        <!--division de imagenes en misma columna-->
+        {{#each HomeTree}}
+        <div class="col-md-4">
+          <div class="menber-container">
+            <div class="menber-detalles">
+            </div>
+            <img src="images/aboutme-h-{{id}}.jpg" class="img-fluid" alt="herramientas-{{id}}">
+          </div> 
+          </div>
+          {{/each}} 
+          </div>
+  <div class="container">
+<div class="conten-center"><h2>Referencias</h2></div></div>
+
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          {{#each trearef}}
+          <div class="carousel-item  {{#equal active "1" }}active{{/equal}}">
+            <p>{{refencia}}</p>
+            <div class="rating">
+              <ul class="list-inline">
+                <!-- esto me permite crear una lista que sea horizontal-->
+                <li class="list-inline-item">
+                  <ion-icon name="star-outline"></ion-icon><!--iconos de estrellas-->
+                </li>
+                <li class="list-inline-item ">
+                  <ion-icon name="star-outline"></ion-icon>
+                </li>
+                <li class="list-inline-item">
+                  <ion-icon name="star-outline"></ion-icon>
+                </li>
+                <li class="list-inline-item">
+                  <ion-icon name="star-outline"></ion-icon>
+                </li>
+                <li class="list-inline-item">
+                  <ion-icon name="star-outline">
+                    </ion-ico>
+                </li>
+              </ul>
+            </div>
+            <div class="testimoni-user">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/IMG-REF-{{id}}.jpg" class="img-fluid" alt="testimonio 1"><!--imagenes de testimonios-->
+                </div>
+                <div class="col-md-9">
+               <a href="/referencia/{{id}}">  <h6>{{nombre_ref}}</h6> </a> 
+                 <a href="/referencia/{{id}}">   <span>{{cargo_ref}}</span> </a> <!--nombre de la persona y el cargo-->
+                </div>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+          </div>
+        </div><!--aqui empieza los controles del carrusel para ir a los lados-->
+        
+      </div>
+
+
+
+
+
+
+      <script>
+
+function cargaMultimedia(htmlu, idhtml){
+  document.getElementById(idhtml).innerHTML=htmlu;
+}
+function traeOoculta(id){
+    if(document.getElementById(id).style.display=='none'){
+  document.getElementById(id).style.display = "block";
+    }else {document.getElementById(id).style.display = "none";}
+  }
+  </script>
+  </section>
