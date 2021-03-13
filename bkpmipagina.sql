@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `additionals` (
 DELETE FROM `additionals`;
 /*!40000 ALTER TABLE `additionals` DISABLE KEYS */;
 INSERT INTO `additionals` (`id`, `descripcionG`, `link_u`, `descripcionU`, `linkC`, `descripcionC`, `createdAt`, `updatedAt`) VALUES
-	(11, 'De donde vengo', '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126504.46170179243!2d-72.29180248952741!3d7.761756571083874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666ca49582d39f%3A0xe35525b271c7ef85!2sSan%20Crist%C3%B3bal%2C%20T%C3%A1chira%2C%20Venezuela!5e0!3m2!1ses!2sar!4v1612211584514!5m2!1ses!2sar" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>', 'San Cristobal, capital de estado Táchira en Venezuela, ciudad de la cordialidad', '<iframe width="200" height="200" src="https://www.youtube.com/embed/ewxF9Jfo7tk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', 'la feria de San Sebastián, un evento cultural por el cual es  conocida la ciudad', '2021-01-31 01:44:45', '2021-02-13 18:06:42'),
+	(11, 'De donde vengo', '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126504.46170179243!2d-72.29180248952741!3d7.761756571083874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666ca49582d39f%3A0xe35525b271c7ef85!2sSan%20Crist%C3%B3bal%2C%20T%C3%A1chira%2C%20Venezuela!5e0!3m2!1ses!2sar!4v1612211584514!5m2!1ses!2sar" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>', 'San Cristobal, capital de estado Táchira en Venezuela, ciudad de la cordialidad', '<iframe width="200" height="200" src="https://www.youtube.com/embed/ewxF9Jfo7tk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', 'la feria de San Sebastián, un evento cultural por el cual conocida la ciudad', '2021-01-31 01:44:45', '2021-01-31 01:44:45'),
 	(12, 'Donde me encuentro', '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.037967695604!2d-58.38904618059821!3d-34.60392148734779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf8f55dcf5%3A0xd073935716337382!2sSan%20Nicol%C3%A1s%2C%20CABA!5e0!3m2!1ses!2sar!4v1612304297626!5m2!1ses!2sar" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>', 'Actualmente resido en la Ciudad Autónoma de Buenos Aires', '', '', '2021-02-02 22:20:17', '2021-02-02 22:20:17');
 /*!40000 ALTER TABLE `additionals` ENABLE KEYS */;
 
@@ -46,14 +46,14 @@ CREATE TABLE IF NOT EXISTS `config` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla 9A58XK5UhN.config: ~38 rows (aproximadamente)
+-- Volcando datos para la tabla 9A58XK5UhN.config: ~39 rows (aproximadamente)
 DELETE FROM `config`;
 /*!40000 ALTER TABLE `config` DISABLE KEYS */;
 INSERT INTO `config` (`id`, `seccion`, `IDhtml`, `valor_cfg`) VALUES
 	(1, 'home', 'TP-1', 'Felix Alejandro Guglielmi Parra'),
 	(2, 'home', 'TP-2', 'Ingeniería Industrial,  Marketing Digital, Desarrollo Web, Aplicaciones y Análisis de Datos'),
 	(3, 'home', 'TP-3', 'Explora mi pagina Web'),
-	(4, 'home', 'TP-4', 'Conoce un poco de mi perfil profesional'),
+	(4, 'home', 'TP-4', 'conoce un poco de mi perfil profesional'),
 	(5, 'home', 'TP-5', 'capaz de analizar elementos endógenos y exógenos de un sistema mediante la utilización de técnicas cualitativas, cuantitativas o tecnológicas, brindando soluciones a necesidades u oportunidades, buscando siempre la eficiencia y eficacia. Me especializo en el razonamiento lógico matemático con un enfoque técnico estadístico'),
 	(6, 'home', 'TP-6', 'Acerca de mi'),
 	(7, 'home', 'TP-7', 'Perseverante y con muchas ganas de aprender, ¿quiere saber más? pulsa qui.'),
@@ -132,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `ExLaboral` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla 9A58XK5UhN.ExLaboral: ~4 rows (aproximadamente)
+-- Volcando datos para la tabla 9A58XK5UhN.ExLaboral: ~6 rows (aproximadamente)
 DELETE FROM `ExLaboral`;
 /*!40000 ALTER TABLE `ExLaboral` DISABLE KEYS */;
 INSERT INTO `ExLaboral` (`id`, `nombre_emp`, `cargo_des`, `tareas_real`, `link_web`, `link_ubi`) VALUES
@@ -155,7 +155,7 @@ CREATE TABLE IF NOT EXISTS `referencias` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla 9A58XK5UhN.referencias: ~1 rows (aproximadamente)
+-- Volcando datos para la tabla 9A58XK5UhN.referencias: ~2 rows (aproximadamente)
 DELETE FROM `referencias`;
 /*!40000 ALTER TABLE `referencias` DISABLE KEYS */;
 INSERT INTO `referencias` (`id`, `nombre_ref`, `active`, `cargo_ref`, `refencia`, `Link_ref`) VALUES
@@ -171,11 +171,11 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla 9A58XK5UhN.usuario: ~0 rows (aproximadamente)
+-- Volcando datos para la tabla 9A58XK5UhN.usuario: ~1 rows (aproximadamente)
 DELETE FROM `usuario`;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
 INSERT INTO `usuario` (`id`, `email`, `password`) VALUES
-	(1, ' ', ' ');
+	(1, 'felixguglielmiar1@gmail.com', '123456');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

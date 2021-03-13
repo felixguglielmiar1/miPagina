@@ -1,53 +1,57 @@
-<section id="contacto"><!--empieza el formulario de contacto-->
+<section id="contacto">
   <div class="container">
     <br>
-      <div class="conten-center"><h2><b>Contacto</b></h2></div>
-<div class="row">
-<div class="col-md-4 top-margin-pe">
-    {{#each HomeTree}}
-<p>{{valor_cfg}}. </p>
-{{/each}}
-</div>
-<div class="col-md-6 top-margin-pe">
-  <form class="form-horizontal" action="/sendMail" method="POST">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="form-group">
-        <input type="text" class="form-control" name="nombre" placeholder="Nombre y Apellido" value={{nombre}}>
+    <div class="conten-center">
+      <h2><b>Contacto</b></h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4 top-margin-pe">
+        {{#each HomeTree}}
+        <p>{{valor_cfg}}. </p>
+        {{/each}}
+      </div>
+      <div class="col-md-6 top-margin-pe">
+        <form class="form-horizontal" action="/sendMail" method="POST">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="text" class="form-control" name="nombre" placeholder="Nombre y Apellido" value={{nombre}}>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="Email" class="form-control" name="email" required placeholder="Correo Electronico"
+                  value={{email}}>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea class="form-control" name="comentario" required
+                  placeholder="Comentario">{{comentario}}</textarea>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="text" class="form-control" name="numero" placeholder="Numero de Telefono" value={{numero}}>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-dark full-ancho">Enviar ahora</button>
+            </div>
+          </div>
+        </form>
+        <br>
+        {{#if errors }}
+        <div class="alert alert-warning">
+          <strong>{{errors}}!</strong>
+        </div>
+        {{/if}}
+        {{#if yes}}
+        <div class="alert alert-warning">
+          <strong>{{yes}}!</strong>
+        </div>
+        {{/if}}
       </div>
     </div>
-    <div class="col-md-12">
-      <div class="form-group">
-        <input type="Email" class="form-control" name="email" required   placeholder="Correo Electronico" value={{email}}>
-      </div>
-    </div>
-    <div class="col-md-12">
-      <div class="form-group">
-        <textarea class="form-control" name="comentario"  required placeholder="Comentario" >{{comentario}}</textarea>
-      </div>
-    </div>
-    <div class="col-md-12">
-      <div class="form-group">
-        <input type="text" class="form-control" name="numero" placeholder="Numero de Telefono" value={{numero}}>
-      </div>
-    </div>
-    <div class="col-md-12">
-      <button type="submit"  class="btn btn-dark full-ancho">Enviar ahora</button>
-    </div>
-  </div>
-  </form>
-  <br>
-  {{#if errors }}
-<div class="alert alert-warning">
-  <strong>{{errors}}!</strong> 
-</div>
-{{/if}}
-{{#if yes}}
-<div class="alert alert-warning">
-  <strong>{{yes}}!</strong> 
-</div>
-{{/if}}
-</div>
-</div>
   </div>
 </section>

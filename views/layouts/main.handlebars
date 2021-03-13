@@ -4,29 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+
   <title>Felix Guglielmi</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="../style.css" rel="stylesheet">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
-    <!--inicia barra de nevegacion, el fixed-top, mantiene fija la barra de navegacion-->
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="images/felix.jpg" class="logo-bran" alt="logo"></a>
-      <!--imagen del logotipo-->
+      <a class="navbar-brand"><img src="images/felix.jpg" class="logo-bran" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <ion-icon name="grid-outline"></ion-icon>
-        <!--boton que contiene el menu cuando la pagina se achica-->
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!--- contenedor de elementos del menu-->
         <ul class="navbar-nav ml-auto">
-          <!--elemento que agrupa los elemento del meno a la izquierda-->
           <li class="nav-item">
             <a class="nav-link" href="/" id="home">Home</a>
           </li>
@@ -40,62 +36,73 @@
           <li class="nav-item">
             <a class="nav-link" href="/estudiosRealizados" id="testimonial">Estudios Realiados</a>
           </li>
-           <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="/contactar" id="contactar">Contacto</a>
           </li>
           <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="contactar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <small>actualizar</small>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/login"><small>actualizar pagina</small></a>
-          <div class="dropdown-divider"></div>
-        </div>
-      </li>
+            <a class="nav-link dropdown-toggle" id="contactar" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="true">
+              <small>actualizar</small>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/login"><small>actualizar pagina</small></a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
 
         </ul>
       </div>
     </div>
   </nav>
-{{{body}}}
- <section id="pie_de_pagina" class="bg-dark">
-<div class="container">
-<img src="images/felix.jpg" class="logo-bran testimoni-user" alt="logo">
-<ul class="list-inline">
+  {{{body}}}
+  <section id="pie_de_pagina" class="bg-dark">
+    <div class="container">
+      <img src="images/felix.jpg" class="logo-bran testimoni-user" alt="logo">
+      <ul class="list-inline">
 
 
-          <li class="list-inline-item footer-menu">
-            <a class="nav-link" href="/exlaboral" id="portfoli-o">Experiencia Laboral</a>
-          </li>
-          <li class="list-inline-item footer-menu">
-            <a class="nav-link" href="/aboutme" id="Acerca-us">Acerca de mi</a>
-          </li>
+        <li class="list-inline-item footer-menu">
+          <a class="nav-link" href="/exlaboral" id="portfoli-o">Experiencia Laboral</a>
+        </li>
+        <li class="list-inline-item footer-menu">
+          <a class="nav-link" href="/aboutme" id="Acerca-us">Acerca de mi</a>
+        </li>
 
-          <li class="list-inline-item footer-menu">
-             <a class="nav-link" href="/estudiosRealizados" id="testimonial">Estudios Realizados</a>
-          </li>
-          <li class="list-inline-item footer-menu">
-           <a class="nav-link" href="/contactar" id="contact">Contacto</a>
+        <li class="list-inline-item footer-menu">
+          <a class="nav-link" href="/estudiosRealizados" id="testimonial">Estudios Realizados</a>
+        </li>
+        <li class="list-inline-item footer-menu">
+          <a class="nav-link" href="/contactar" id="contact">Contacto</a>
 
 
-</ul>
-<ul class="list-inline">
-  <li class="list-inline-item "><a href="/tinst" id="home-TP-17"><ion-icon name="logo-instagram"></ion-icon></a></li>
-  <li class="list-inline-item "><a href="/ttwit" id="home-TP-18"><ion-icon name="logo-twitter"></ion-icon></a></li>
-  <li class="list-inline-item "><a href="/tlink" id="home-TP-19"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-  <li class="list-inline-item "><a href="/tface" id="home-TP-20" ><ion-icon name="logo-facebook"></ion-icon></a></li>
-</ul>
-<small>{{#each home}}
-          {{#equal IDhtml "TP-16" }}{{valor_cfg}}{{/equal}}
-          {{/each}}</small>
-</div>
-</section>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+      </ul>
+      <ul class="list-inline">
+        <li class="list-inline-item "><a href="/tinst" id="home-TP-17">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+        <li class="list-inline-item "><a href="/ttwit" id="home-TP-18">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="list-inline-item "><a href="/tlink" id="home-TP-19">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="list-inline-item "><a href="/tface" id="home-TP-20">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+      </ul>
+      <small>{{#each home}}{{#equal IDhtml "TP-16" }}{{valor_cfg}}{{/equal}}{{/each}}</small>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
+
 </html>

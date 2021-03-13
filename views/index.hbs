@@ -1,135 +1,87 @@
-  
-  <section id="hero" >
-      
-    <div id="home">
+<section id="hero">
+
+  <div id="home">
     <div class="container">
       <div class="conten-center">
         <div class="top-mar">
-         
-        <h1 id="home-TP-1" >
-         {{#each home}}
-          {{#equal IDhtml "TP-1" }}{{valor_cfg}}{{/equal}}
-          {{/each}}
-          </h1> 
-  
-   
-        <p id="home-TP-2">
-          {{#each home}}
-          {{#equal IDhtml "TP-2" }}{{valor_cfg}}{{/equal}}
-          {{/each}}
-        </p>
-         
-      
-        <a href="#portafolio" id="home-TP-3" class="btn btn-light top-margin-gr">
-          {{#each home}}
-          {{#equal IDhtml "TP-3" }}{{valor_cfg}}{{/equal}}
-          {{/each}}
-           <ion-icon name="laptop-outline"></ion-icon></a>
-      
+
+          <h1 id="home-TP-1">{{#each home}}{{#equal IDhtml "TP-1" }}{{valor_cfg}}{{/equal}}{{/each}}</h1>
+          <p id="home-TP-2">{{#each home}}{{#equal IDhtml "TP-2" }}{{valor_cfg}}{{/equal}}{{/each}}</p>
+          <a href="#portafolio" id="home-TP-3" class="btn btn-light top-margin-gr">{{#each home}}{{#equal IDhtml "TP-3"
+            }}{{valor_cfg}}{{/equal}}{{/each}}<ion-icon name="laptop-outline"></ion-icon></a>
+        </div>
       </div>
-      </div>
-   
+
     </div>
-  </section>
-  <section id="portafolio">
- 
-    <div class="container-fluid">
-      <div class="conten-center">
-        <h2> <b> 
-           {{#each home}}
-          {{#equal IDhtml "TP-4" }}{{valor_cfg}}{{/equal}}
-          {{/each}}
-        </b> </h2>
-        <p>
-           {{#each home}}
-          {{#equal IDhtml "TP-5" }}{{valor_cfg}}{{/equal}}
-          {{/each}}
-        </p>
-      </div>
-      <div class="row">
-        <!--aqui empieza las imagenes del portafolio y sus descripciones-->
-        <div class="col-md-6">
-          <div class="portafolio-container">
-            <div class="portafolio-detalles">
-              <a href="/aboutme">
-                <h2> {{#each home}}
-          {{#equal IDhtml "TP-6" }}{{valor_cfg}}{{/equal}}
-          {{/each}}</h2>
-              </a>
-              <a href="/aboutme">
-                <p> {{#each home}}
-          {{#equal IDhtml "TP-7" }}{{valor_cfg}}{{/equal}}
-          {{/each}}</p>
-              </a>
+</section>
+<section id="portafolio">
 
-            </div>
-            <img src="./images/portfolio-01.jpg" class="img-fluid" alt='portafolio 1'>
+  <div class="container-fluid">
+    <div class="conten-center">
+      <h2> <b>{{#each home}}{{#equal IDhtml "TP-4" }}{{valor_cfg}}{{/equal}}{{/each}}</b></h2>
+      <p>{{#each home}}{{#equal IDhtml "TP-5" }}{{valor_cfg}}{{/equal}}{{/each}}</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="portafolio-container">
+          <div class="portafolio-detalles">
+            <a href="/aboutme">
+              <h2> {{#each home}}{{#equal IDhtml "TP-6" }}{{valor_cfg}}{{/equal}}{{/each}}</h2>
+            </a>
+            <a href="/aboutme">
+              <p> {{#each home}}{{#equal IDhtml "TP-7" }}{{valor_cfg}}{{/equal}}{{/each}}</p>
+            </a>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="portafolio-container">
-            <div class="portafolio-detalles">
-              <a href="/estudiosRealizados">
-                <h2> {{#each home}}
-          {{#equal IDhtml "TP-8" }}{{valor_cfg}}{{/equal}}
-          {{/each}}</h2>
-              </a>
-              <a href="/estudiosRealizados">
-                <p> {{#each home}}
-          {{#equal IDhtml "TP-9" }}{{valor_cfg}}{{/equal}}
-          {{/each}}</p>
-              </a>
- 
-            </div>
-            <img src="./images/portfolio-02.jpg" class="img-fluid" alt='portafolio 2'>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="portafolio-container">
-            <div class="portafolio-detalles">
-              <a href="/exlaboral">
-                <h2> {{#each home}}
-          {{#equal IDhtml "TP-10" }}{{valor_cfg}}{{/equal}}
-          {{/each}}</h2>
-              </a>
-              <a href="/exlaboral"> 
-                <p> {{#each home}}
-          {{#equal IDhtml "TP-11" }}{{valor_cfg}}{{/equal}}
-          {{/each}}</p>
-              </a>
-
-            </div>
-            <img src="./images/portfolio-03.jpg" class="img-fluid" alt='portafolio 3'>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="portafolio-container">
-            <div class="portafolio-detalles">
-              <a href="/contactar">
-                <h2>{{#each home}}
-          {{#equal IDhtml "TP-12" }}{{valor_cfg}}{{/equal}}
-          {{/each}}</h2>
-              </a>
-              <a href="/contactar">
-                <p>{{#each home}}
-          {{#equal IDhtml "TP-13" }}{{valor_cfg}}{{/equal}}
-          {{/each}}</p>
-              </a>
-
-            </div>
-            <img src="./images/portfolio-04.jpg" class="img-fluid" alt='portafolio 4'>
-          </div>
+          <img src="./images/portfolio-01.jpg" class="img-fluid" alt='portafolio 1'>
         </div>
       </div>
-      <div class="conten-center">
-        <p>{{#each home}}
-          {{#equal IDhtml "TP-14" }}{{valor_cfg}}{{/equal}}
-          {{/each}}</p>
-       
-        <a class="text-negro">{{#each home}}
-          {{#equal IDhtml "TP-15" }}{{valor_cfg}}{{/equal}}
-          {{/each}}</a>
+      <div class="col-md-6">
+        <div class="portafolio-container">
+          <div class="portafolio-detalles">
+            <a href="/estudiosRealizados">
+              <h2> {{#each home}}{{#equal IDhtml "TP-8" }}{{valor_cfg}}{{/equal}}{{/each}}</h2>
+            </a>
+            <a href="/estudiosRealizados">
+              <p> {{#each home}}{{#equal IDhtml "TP-9" }}{{valor_cfg}}{{/equal}}{{/each}}</p>
+            </a>
+
+          </div>
+          <img src="./images/portfolio-02.jpg" class="img-fluid" alt='portafolio 2'>
+        </div>
       </div>
- </div>   
- </div>
-  </section>
+      <div class="col-md-6">
+        <div class="portafolio-container">
+          <div class="portafolio-detalles">
+            <a href="/exlaboral">
+              <h2> {{#each home}}{{#equal IDhtml "TP-10" }}{{valor_cfg}}{{/equal}}{{/each}}</h2>
+            </a>
+            <a href="/exlaboral">
+              <p> {{#each home}}{{#equal IDhtml "TP-11" }}{{valor_cfg}}{{/equal}}{{/each}}</p>
+            </a>
+
+          </div>
+          <img src="./images/portfolio-03.jpg" class="img-fluid" alt='portafolio 3'>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="portafolio-container">
+          <div class="portafolio-detalles">
+            <a href="/contactar">
+              <h2>{{#each home}}{{#equal IDhtml "TP-12" }}{{valor_cfg}}{{/equal}}{{/each}}</h2>
+            </a>
+            <a href="/contactar">
+              <p>{{#each home}}{{#equal IDhtml "TP-13" }}{{valor_cfg}}{{/equal}}{{/each}}</p>
+            </a>
+
+          </div>
+          <img src="./images/portfolio-04.jpg" class="img-fluid" alt='portafolio 4'>
+        </div>
+      </div>
+    </div>
+    <div class="conten-center">
+      <p>{{#each home}}{{#equal IDhtml "TP-14" }}{{valor_cfg}}{{/equal}}{{/each}}</p>
+      <a class="text-negro">{{#each home}}{{#equal IDhtml "TP-15" }}{{valor_cfg}}{{/equal}}{{/each}}</a>
+    </div>
+  </div>
+  </div>
+</section>

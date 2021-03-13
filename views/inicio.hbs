@@ -1,829 +1,880 @@
-
-<nav id="navG"class="navbar navbar-inverse  fixed-top top-margin-en bottom-margin-en opaco" role="navigation">
-    <div class="container-fluid">
-		
-			<ul class="nav navbar-nav letraChica">
-				<li class="active"><a href="#Home"><h6>Home</h6></a></li>
-				<li ><a href="#Exlaboral"><h6>Experiencia Laboral</h6></a></li>
-					<li ><a href="#estudiosR"><h6>Estudios Realizados</h6></a></li>
-          	<li ><a href="#aboutmeS"><h6>Acerca de Mi</h6></a></li>
-            <li ><a href="#contact"><h6>Contacto</h6></a></li>
-					</ul> 
-
-	</div>
+<nav id="navG" class="navbar navbar-inverse  fixed-top top-margin-en bottom-margin-en opaco" role="navigation">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav letraChica">
+      <li class="active"><a href="#Home">
+          <h6>Home</h6>
+        </a></li>
+      <li><a href="#Exlaboral">
+          <h6>Experiencia Laboral</h6>
+        </a></li>
+      <li><a href="#estudiosR">
+          <h6>Estudios Realizados</h6>
+        </a></li>
+      <li><a href="#aboutmeS">
+          <h6>Acerca de Mi</h6>
+        </a></li>
+      <li><a href="#contact">
+          <h6>Contacto</h6>
+        </a></li>
+    </ul>
+  </div>
 </nav>
- <section id="Home"  class="divider">
-    <div class="container">
-      <div class="conten-center">
-        <h2> <b> Editor de secciones </b></h2>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="precios-contenedor">
-            <div class="planes plan-basico">
-              <center ><h4> Home</h4></center>
-              <center><button  class="btn btn-danger" onclick="traeOoculta('homeContainer')">Expandir Home</button></center>
-   <div id="homeContainer" class="conten-center" style="display:none;">
-              
+<section id="Home" class="divider">
+  <div class="container">
+    <div class="conten-center">
+      <h2> <b> Editor de secciones </b></h2>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="precios-contenedor">
+          <div class="planes plan-basico">
+            <center>
+              <h4> Home</h4>
+            </center>
+            <center><button class="btn btn-danger" onclick="traeOoculta('homeContainer')">Expandir Home</button>
+            </center>
+            <div id="homeContainer" class="conten-center" style="display:none;">
+
               <h4>imagen para header y footer</h4>
-<form action="/upload-HF" method="POST" enctype="multipart/form-data">
-  <div class="custom-file">
-    <input type="file"  name="imagen"id="imagen" required>
-  </div>
-    <br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-{{#if msg }}
-  <strong>{{msg}}!</strong> 
-{{/if}}
-</form>
-<br>
-<form action="/TP-1-3" method="POST" >
-  <div class="custom-file">
-   <center><h4>Texto en seccion principal </h4></center>
-   <br>
-   <label for="TP-1">titulo principal</label>
-   <textarea class="form-control" id="TP-1" name="TPone" rows="1" required></textarea>
-   <br>
-   <label for="TP-2">descripcion titulo principal</label>
-   <textarea class="form-control" id="TP-2" name="TPtwo" rows="1" required ></textarea>
-   <br>
-   <label for="TP-3">texto en boton</label>
-   <textarea class="form-control" id="TP-3" name="TPtree" rows="1" required></textarea>
-   <br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-{{#if msg2 }}
-  <strong>{{msg2}}!</strong> 
-{{/if}}
-</form>
-<br>
-<h4>Imagen de Fondo en titulo principal</h4>
-<br>
-<form action="upload-Hp" method="POST" enctype="multipart/form-data">
- <div class="custom-file">
-    <input type="file"  name="imagen"> 
-  </div>
-    <br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-{{#if msg3 }}
-  <strong>{{msg3}}!</strong> 
-{{/if}}
-</form>
-<br>
-
-            
-            
- <center><h4>secciones de pagina </h4></center>
-  <form action="/TP-4-5" method="POST">
-  <label for="TP-4">titulo principal</label>
-   <textarea class="form-control" id="TP-4" name="TPfour" rows="1" required></textarea>
-   <br>
-   <label for="TP-5">descripcion titulo principal</label>
-   <textarea class="form-control" id="TP-5" name="TPfive" rows="1" required ></textarea>
-   <br>
-   <center><button type="submit" class="btn btn-danger">subir</button></center>
-{{#if msg4 }}
-  <strong>{{msg4}}!</strong> 
-{{/if}}
-</form>
-        
-       <br>
- <form action="/TP-6-7" method="POST" >
-  <div class="custom-file">
-   <center><h4>Texto en imagen de seccion 1 </h4></center>
-   <br>
-   <label for="TP-6">titulo</label>
-   <textarea class="form-control" id="TP-6" name="TPsix" rows="1" required></textarea>
-   <br>
-   <label for="TP-7">descripcion titulo principal</label>
-   <textarea class="form-control" id="TP-7" name="TPseven" rows="1" required ></textarea>
-   <br>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-{{#if msg5 }}
-  <strong>{{msg5}}!</strong> 
-{{/if}}
-<br>
-<form action="upload-s1" method="POST" enctype="multipart/form-data">
- <center><h4>imagen 1 de seccion 1</h4></center>
- <div class="custom-file">
-    <input type="file"  name="imagen"> 
-  </div>
-    <br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-{{#if msg6 }}
-  <strong>{{msg6}}!</strong> 
-{{/if}}
-</form>
-<br>
-
- <form action="/TP-8-9" method="POST" >
-  <div class="custom-file">
-   <center><h4>Texto en imagen 2 de seccion 1 </h4></center>
-   <br>
-   <label for="TP-8">titulo</label>
-   <textarea class="form-control" id="TP-8" name="TPeight" rows="1" required></textarea>
-   <br>
-   <label for="TP-9">descripcion titulo principal</label>
-   <textarea class="form-control" id="TP-9" name="TPnine" rows="1" required ></textarea>
-   <br>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-
-{{#if msg7 }}
-  <strong>{{msg7}}!</strong> 
-{{/if}}
-<br>
-<form action="upload-s2" method="POST" enctype="multipart/form-data">
- <center><h4>imagen 2 de seccion 1</h4></center>
- <div class="custom-file">
-    <input type="file"  name="imagen"> 
-  </div>
-    <br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-<br>
-{{#if msg8 }}
-  <strong>{{msg8}}!</strong> 
-{{/if}}
-</form>
-<br>
-
- <form action="/TP-10-11" method="POST" >
-  <div class="custom-file">
-   <center><h4>Texto en imagen 3 de seccion 1 </h4></center>
-   <br>
-   <label for="TP-10">titulo</label>
-   <textarea class="form-control" id="TP-10" name="TPten" rows="1" required></textarea>
-   <br>
-   <label for="TP-11">descripcion titulo principal</label>
-   <textarea class="form-control" id="TP-11" name="TPeleven" rows="1" required ></textarea>
-   <br>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-
-{{#if msg9 }}
-  <strong>{{msg9}}!</strong> 
-{{/if}}
-<br>
-<form action="upload-s3" method="POST" enctype="multipart/form-data">
- <center><h4>imagen 3 de seccion 1</h4></center>
- <div class="custom-file">
-    <input type="file"  name="imagen"> 
-  </div>
-    <br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-<br>
-{{#if msg10 }}
-  <strong>{{msg10}}!</strong> 
-{{/if}}
-</form>
-<br>
-
- <form action="/TP-12-13" method="POST" >
-  <div class="custom-file">
-   <center><h4>Texto en imagen 4 de seccion 1 </h4></center>
-   <br>
-   <label for="TP-12">titulo</label>
-   <textarea class="form-control" id="TP-12" name="TPTwelve" rows="1" required></textarea>
-   <br>
-   <label for="TP-13">descripcion titulo principal</label>
-   <textarea class="form-control" id="TP-13" name="TPThirteen" rows="1" required ></textarea>
-   <br>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-
-{{#if msg11 }}
-  <strong>{{msg11}}!</strong> 
-{{/if}}
-<br>
-<form action="upload-s4" method="POST" enctype="multipart/form-data">
- <center><h4>imagen 4 de seccion 1</h4></center>
- <div class="custom-file">
-    <input type="file"  name="imagen"> 
-  </div>
-    <br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-<br>
-{{#if msg12 }}
-  <strong>{{msg12}}!</strong> 
-{{/if}}
-</form>
- 
-<br>
- 
-
- <form action="/TP-14-15" method="POST" >
-  <div class="custom-file">
-   <center><h4>Texto en pie de imagenes </h4></center>
-   <br>
-   <label for="TP-14">titulo en pie de imagenes</label>
-   <textarea class="form-control" id="TP-14" name="TPFourteen" rows="1" required></textarea>
-   <br>
-   <label for="TP-15">descripcion titulo </label>
-   <textarea class="form-control" id="TP-15" name="TPFifteen" rows="1" required ></textarea>
-   <br>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-{{#if msg13}}
-  <strong>{{msg13}}!</strong> 
-{{/if}} 
-</form>
-
- <form action="/TP-16-20" method="POST" >
-  <div class="custom-file">
-   <center><h4>link de redes sociales, texto en pie de pagina </h4></center>
-   <br>
-   <textarea class="form-control" id="TP-16" name="TPsixteen" rows="1" placeholder="texto en pie de pagina"></textarea>
-   <br>
-  <textarea class="form-control" id="TP-17" name="TPinst" rows="1" placeholder="link instagram"></textarea>
-   <br>
-   <textarea class="form-control" id="TP-18" name="TPtwit" rows="1" placeholder="link twitter"></textarea>
-   <br>
-   <textarea class="form-control" id="TP-19" name="TPlink" rows="1" placeholder="link linkedin" ></textarea>
-   <br>
-   <textarea class="form-control" id="TP-20" name="TPface" rows="1" placeholder="link facebook"></textarea>
-   <br>
-   
-   <br>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-
-{{#if msg14}}
-  <strong>{{msg14}}!</strong> 
-{{/if}} 
-
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-  </section>
-<section id="Exlaboral" class="divider">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="precios-contenedor">
-            <div class="planes plan-basico">
-              <center><h4> Experiencia laboral</h4></center>
-              <center><button  class="btn btn-danger" onclick="traeOoculta('ExlaContainer')">Expandir Experiencia Laboral</button></center>
+              <form action="/upload-HF" method="POST" enctype="multipart/form-data">
+                <div class="custom-file">
+                  <input type="file" name="imagen" id="imagen" required>
+                </div>
+                <br>
+                <center><button type="submit" class="btn btn-danger">subir</button></center>
+                {{#if msg }}
+                <strong>{{msg}}!</strong>
+                {{/if}}
+              </form>
               <br>
-   <div id="ExlaContainer"  style="display:none;">
-   <form action="/TP-21-22" method="POST" >
-  <div class="custom-file">
-    <textarea class="form-control" id="TP-21" name="TPtwentyone" rows="1" placeholder="titulo en experiencia laboral"></textarea>
-   <br>
-   <textarea class="form-control" id="TP-22" name="TPtwentytwo" rows="1" placeholder="descripcion del titulo en experiencia laboral"></textarea>
- <br>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-
-{{#if msg15}}
-  <strong>{{msg15}}!</strong> 
-{{/if}} 
-              </div>
-<br><br>
-<div class='container'>
-  <div class="row">
-<a href="#modExp" class="conten-center"><div class='col-4'><center><button class="btn btn-danger"  onclick="traeOoculta('NuevaEl')">Modificar</button></center></div></a>
-<div class="col-4 conten-center"><center><button class="btn btn-danger" onclick="traeOoculta('NuevaEl')">Nueva</button></center></div>
-<a href="#eliExp"class="conten-center"><div class="col-4"><center><button  class="btn btn-danger" onclick="traeOoculta('NuevaEl')">Eliminar</button></center></div></a>
-</div>
-</div>
-<!--continua exLaboralDet /TP-cargarDelete-->
-<br>
- <div id='NuevaEl'class="container" style="display:none;">
-  
-              <center><h4> Agregar Nueva Experiencia laboral</h4></center>
-   <form action="/TP-NewExL" method="POST" enctype="multipart/form-data">
-  <div class="custom-file">
-    <textarea class="form-control" id="TP-NE" name="TPNE" rows="1" placeholder="Nombre de Empresa"></textarea>
-   <br>
-   <textarea class="form-control" id="TP-CD" name="TPCD" rows="1" placeholder="Cargo Desempeñado"></textarea>
- <br>
- <textarea class="form-control" id="TP-TR" name="TPTR" rows="4" placeholder="Tareas Realizadas"></textarea>
- <br>
- <textarea class="form-control" id="TP-Lw" name="TPLW" rows="1" placeholder="link web"></textarea>
- <br>
- <textarea class="form-control" id="TP-lu" name="TPLU" rows="1" placeholder="link ubicacion"></textarea>
- <br> 
- <label for="TP-imgEMP">Imagen de Empresa</label>
- <div class="custom-file">
-    <input type="file"  name="imagen" required> 
+              <form action="/TP-1-3" method="POST">
+                <div class="custom-file">
+                  <center>
+                    <h4>Texto en seccion principal </h4>
+                  </center>
+                  <br>
+                  <label for="TP-1">titulo principal</label>
+                  <textarea class="form-control" id="TP-1" name="TPone" rows="1" required></textarea>
+                  <br>
+                  <label for="TP-2">descripcion titulo principal</label>
+                  <textarea class="form-control" id="TP-2" name="TPtwo" rows="1" required></textarea>
+                  <br>
+                  <label for="TP-3">texto en boton</label>
+                  <textarea class="form-control" id="TP-3" name="TPtree" rows="1" required></textarea>
+                  <br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+                  {{#if msg2 }}
+                  <strong>{{msg2}}!</strong>
+                  {{/if}}
+              </form>
+              <br>
+              <h4>Imagen de Fondo en titulo principal</h4>
+              <br>
+              <form action="upload-Hp" method="POST" enctype="multipart/form-data">
+                <div class="custom-file">
+                  <input type="file" name="imagen">
+                </div>
+                <br>
+                <center><button type="submit" class="btn btn-danger">subir</button></center>
+                {{#if msg3 }}
+                <strong>{{msg3}}!</strong>
+                {{/if}}
+              </form>
+              <br>
+              <center>
+                <h4>secciones de pagina </h4>
+              </center>
+              <form action="/TP-4-5" method="POST">
+                <label for="TP-4">titulo principal</label>
+                <textarea class="form-control" id="TP-4" name="TPfour" rows="1" required></textarea>
+                <br>
+                <label for="TP-5">descripcion titulo principal</label>
+                <textarea class="form-control" id="TP-5" name="TPfive" rows="1" required></textarea>
+                <br>
+                <center><button type="submit" class="btn btn-danger">subir</button></center>
+                {{#if msg4 }}
+                <strong>{{msg4}}!</strong>
+                {{/if}}
+              </form>
+              <br>
+              <form action="/TP-6-7" method="POST">
+                <div class="custom-file">
+                  <center>
+                    <h4>Texto en imagen de seccion 1 </h4>
+                  </center>
+                  <br>
+                  <label for="TP-6">titulo</label>
+                  <textarea class="form-control" id="TP-6" name="TPsix" rows="1" required></textarea>
+                  <br>
+                  <label for="TP-7">descripcion titulo principal</label>
+                  <textarea class="form-control" id="TP-7" name="TPseven" rows="1" required></textarea>
+                  <br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+              </form>
+              {{#if msg5 }}
+              <strong>{{msg5}}!</strong>
+              {{/if}}
+              <br>
+              <form action="upload-s1" method="POST" enctype="multipart/form-data">
+                <center>
+                  <h4>imagen 1 de seccion 1</h4>
+                </center>
+                <div class="custom-file">
+                  <input type="file" name="imagen">
+                </div>
+                <br>
+                <center><button type="submit" class="btn btn-danger">subir</button></center>
+                {{#if msg6 }}
+                <strong>{{msg6}}!</strong>
+                {{/if}}
+              </form>
+              <br>
+              <form action="/TP-8-9" method="POST">
+                <div class="custom-file">
+                  <center>
+                    <h4>Texto en imagen 2 de seccion 1 </h4>
+                  </center>
+                  <br>
+                  <label for="TP-8">titulo</label>
+                  <textarea class="form-control" id="TP-8" name="TPeight" rows="1" required></textarea>
+                  <br>
+                  <label for="TP-9">descripcion titulo principal</label>
+                  <textarea class="form-control" id="TP-9" name="TPnine" rows="1" required></textarea>
+                  <br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+              </form>
+              {{#if msg7 }}
+              <strong>{{msg7}}!</strong>
+              {{/if}}
+              <br>
+              <form action="upload-s2" method="POST" enctype="multipart/form-data">
+                <center>
+                  <h4>imagen 2 de seccion 1</h4>
+                </center>
+                <div class="custom-file">
+                  <input type="file" name="imagen">
+                </div>
+                <br>
+                <center><button type="submit" class="btn btn-danger">subir</button></center>
+                <br>
+                {{#if msg8 }}
+                <strong>{{msg8}}!</strong>
+                {{/if}}
+              </form>
+              <br>
+              <form action="/TP-10-11" method="POST">
+                <div class="custom-file">
+                  <center>
+                    <h4>Texto en imagen 3 de seccion 1 </h4>
+                  </center>
+                  <br>
+                  <label for="TP-10">titulo</label>
+                  <textarea class="form-control" id="TP-10" name="TPten" rows="1" required></textarea>
+                  <br>
+                  <label for="TP-11">descripcion titulo principal</label>
+                  <textarea class="form-control" id="TP-11" name="TPeleven" rows="1" required></textarea>
+                  <br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+              </form>
+              {{#if msg9 }}
+              <strong>{{msg9}}!</strong>
+              {{/if}}
+              <br>
+              <form action="upload-s3" method="POST" enctype="multipart/form-data">
+                <center>
+                  <h4>imagen 3 de seccion 1</h4>
+                </center>
+                <div class="custom-file">
+                  <input type="file" name="imagen">
+                </div>
+                <br>
+                <center><button type="submit" class="btn btn-danger">subir</button></center>
+                <br>
+                {{#if msg10 }}
+                <strong>{{msg10}}!</strong>
+                {{/if}}
+              </form>
+              <br>
+              <form action="/TP-12-13" method="POST">
+                <div class="custom-file">
+                  <center>
+                    <h4>Texto en imagen 4 de seccion 1 </h4>
+                  </center>
+                  <br>
+                  <label for="TP-12">titulo</label>
+                  <textarea class="form-control" id="TP-12" name="TPTwelve" rows="1" required></textarea>
+                  <br>
+                  <label for="TP-13">descripcion titulo principal</label>
+                  <textarea class="form-control" id="TP-13" name="TPThirteen" rows="1" required></textarea>
+                  <br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+              </form>
+              {{#if msg11 }}
+              <strong>{{msg11}}!</strong>
+              {{/if}}
+              <br>
+              <form action="upload-s4" method="POST" enctype="multipart/form-data">
+                <center>
+                  <h4>imagen 4 de seccion 1</h4>
+                </center>
+                <div class="custom-file">
+                  <input type="file" name="imagen">
+                </div>
+                <br>
+                <center><button type="submit" class="btn btn-danger">subir</button></center>
+                <br>
+                {{#if msg12 }}
+                <strong>{{msg12}}!</strong>
+                {{/if}}
+              </form>
+              <br>
+              <form action="/TP-14-15" method="POST">
+                <div class="custom-file">
+                  <center>
+                    <h4>Texto en pie de imagenes </h4>
+                  </center>
+                  <br>
+                  <label for="TP-14">titulo en pie de imagenes</label>
+                  <textarea class="form-control" id="TP-14" name="TPFourteen" rows="1" required></textarea>
+                  <br>
+                  <label for="TP-15">descripcion titulo </label>
+                  <textarea class="form-control" id="TP-15" name="TPFifteen" rows="1" required></textarea>
+                  <br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+                  {{#if msg13}}
+                  <strong>{{msg13}}!</strong>
+                  {{/if}}
+              </form>
+              <form action="/TP-16-20" method="POST">
+                <div class="custom-file">
+                  <center>
+                    <h4>link de redes sociales, texto en pie de pagina </h4>
+                  </center>
+                  <br>
+                  <textarea class="form-control" id="TP-16" name="TPsixteen" rows="1"
+                    placeholder="texto en pie de pagina"></textarea>
+                  <br>
+                  <textarea class="form-control" id="TP-17" name="TPinst" rows="1"
+                    placeholder="link instagram"></textarea>
+                  <br>
+                  <textarea class="form-control" id="TP-18" name="TPtwit" rows="1"
+                    placeholder="link twitter"></textarea>
+                  <br>
+                  <textarea class="form-control" id="TP-19" name="TPlink" rows="1"
+                    placeholder="link linkedin"></textarea>
+                  <br>
+                  <textarea class="form-control" id="TP-20" name="TPface" rows="1"
+                    placeholder="link facebook"></textarea>
+                  <br>
+                  <br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+              </form>
+              {{#if msg14}}
+              <strong>{{msg14}}!</strong>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-
-{{#if msg16}}
-  <strong>{{msg16}}!</strong> 
-{{/if}} 
-                 <br>
-
-          
- <div id='eliExp'>
-      
-              <center><h4> Eliminar Experiencia laboral</h4></center>
-   {{#each exLaboralDet}}
-   <form action="/TP-cargarDelete" method="POST">
-  <div class="custom-file">
-    <label for="nombre_emp">Nombre de Empresa</label>
-    <textarea class="form-control"  name="Empresa" rows="1">{{nombre_emp}}</textarea>
-   <br>
-    <label for="cargo_emp">Cargo ocupado</label>
-   <textarea class="form-control"  name="Cargo" rows="1" >{{cargo_des}}</textarea>
-   <label for="cargo_emp">id</label>
-   <textarea class="form-control"  name="id" rows="1" readonly>{{id}}</textarea>
- <br>
- 
-<center><button type="submit" class="btn btn-danger">Eliminar</button></center>
-
-</form>
-{{/each}}
-{{#if msg17}}
-  <strong>{{msg17}}!</strong> 
-{{/if}} 
-             
-                  </div>           
-  
-<br>
-<div id='modExp'>
-      
-              <center><h4> Modificar Experiencia laboral</h4></center>
-   {{#each exLaboralDet}}
-   <form action="/TP-modificaEx" method="POST" enctype="multipart/form-data">
-  <div class="custom-file">
-    <label for="nombre_emp">Nombre de Empresa</label>
-    <textarea class="form-control"  id='TP_EMP'name="EMP" rows="1">{{nombre_emp}}</textarea>
-   <br>
-    <label for="cargo_emp">Cargo ocupado</label>
-   <textarea class="form-control" id='TP_CAR' name="CAR" rows="1" >{{cargo_des}}</textarea>
-   <br>
-   <label >ID</label>
-   <textarea class="form-control" id="id" name="ID" rows="1" readonly>{{id}}</textarea>
-<br>
- <label >Tareas Realizadas</label>
- <textarea class="form-control" id="TP-TR" name="TR" rows="4" >{{tareas_real}}</textarea>
- <br>
- <label >Link Web</label>
- <textarea class="form-control" id="TP-Lw" name="LW" rows="1" >{{link_web}}</textarea>
- <br>
- <label >Link ubicacion</label>
- <textarea class="form-control" id="TP-lu" name="LU" rows="1" >{{link_ubi}}</textarea>
- <br> 
- <label for="TP-imgEMP">Imagen de Empresa</label>
- <div class="custom-file">
-    <input type="file"  name="imagen" required> 
-  </div>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-{{/each}} 
-{{#if msg18}}
-  <strong>{{msg18}}!</strong> 
-{{/if}} 
-              
-                 </div>
-                  </div> 
-
-
-
-
-
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
-
-<section id='estudiosR'class="divider">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="precios-contenedor">
-            <div class="planes plan-basico">
-              <center><h4> Estudios Realizados</h4></center>
-      
-               <center><button  class="btn btn-danger" onclick="traeOoculta('EstudiosRContainer')">Expandir estudios</button></center>
-   <div id="EstudiosRContainer"  style="display:none;">
-<br>
-
-   <form action="/TP-23-24" method="POST" >
-  <div class="custom-file">
-    <textarea class="form-control" id="TP-23" name="TPtwentytree" rows="1" placeholder="titulo en estudios realizados"></textarea>
-   <br>
-   <textarea class="form-control" id="TP-24" name="TPtwentyfour" rows="1" placeholder="descripcion del titulo en estudios realizados"></textarea>
- <br>
-<center><button type="submit"  id="submit"class="btn btn-danger">subir</button></center>
-</form>
-{{#if msg19}}
-  <strong>{{msg19}}!</strong> 
-{{/if}}       
-<br><br>
-   </div>
-<div class='container'>
-  <div class="row">
- <a href="#modEst" class="conten-center"> <div class='col-4'><center><button class="btn btn-danger"  onclick="traeOoculta('estudio1')">Modificar</button></center></div>  </a>
-<div class="col-4 conten-center"><center><button class="btn btn-danger" onclick="traeOoculta('estudio1')">Nuevo</button></center></div>
-<a href="#elmEst" class="conten-center"><div class="col-4"><center><button  class="btn btn-danger" onclick="traeOoculta('estudio1')">Eliminar</button></center></div></a>
-</div>
-</div>
-<br>
-
- <div id='estudio1'class="container" style="display:none;">
-      <div class="nueEst">
-              <center><h4> Agregar Nuevo Estudio Realizado</h4></center>
-   <form action="/TP-NewEsR" method="POST" enctype="multipart/form-data">
-  <div class="custom-file">
-    <textarea class="form-control"  name="TPNI" rows="1" placeholder="Nombre de la institucion" required></textarea>
-   <br>
-   <textarea class="form-control"  name="TPTO" rows="1" placeholder="Titulo optenido" required></textarea>
- <br>
- <textarea class="form-control"  name="TPPE" rows="4" placeholder="Perfil del egresado"></textarea>
- <br>
- <textarea class="form-control"  name="TPDP" rows="1" placeholder="Disiplina"></textarea>
- <br>
- <textarea class="form-control"  name="TPLW" rows="1" placeholder="link web"></textarea>
- <br> 
- <textarea class="form-control" name="TPLU" rows="1" placeholder="link ubicacion"></textarea>
- <br> 
-  <textarea class="form-control" name="TPPC" rows="1" placeholder="Periodo cursado"></textarea>
- <br>
-  <textarea class="form-control" name="TPLC" rows="1" placeholder="Etiqueta de ubicacion"></textarea>
- <br>
- <label for="TP-imgEMP">Certificado</label>
- <div class="custom-file">
-    <input type="file"  name="imagen"> 
+<section id="Exlaboral" class="divider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="precios-contenedor">
+          <div class="planes plan-basico">
+            <center>
+              <h4> Experiencia laboral</h4>
+            </center>
+            <center><button class="btn btn-danger" onclick="traeOoculta('ExlaContainer')">Expandir Experiencia
+                Laboral</button></center>
+            <br>
+            <div id="ExlaContainer" style="display:none;">
+              <form action="/TP-21-22" method="POST">
+                <div class="custom-file">
+                  <textarea class="form-control" id="TP-21" name="TPtwentyone" rows="1"
+                    placeholder="titulo en experiencia laboral"></textarea>
+                  <br>
+                  <textarea class="form-control" id="TP-22" name="TPtwentytwo" rows="1"
+                    placeholder="descripcion del titulo en experiencia laboral"></textarea>
+                  <br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+              </form>
+              {{#if msg15}}
+              <strong>{{msg15}}!</strong>
+              {{/if}}
+            </div>
+            <br><br>
+            <div class='container'>
+              <div class="row">
+                <a href="#modExp" class="conten-center">
+                  <div class='col-4'>
+                    <center><button class="btn btn-danger" onclick="traeOoculta('NuevaEl')">Modificar</button></center>
+                  </div>
+                </a>
+                <div class="col-4 conten-center">
+                  <center><button class="btn btn-danger" onclick="traeOoculta('NuevaEl')">Nueva</button></center>
+                </div>
+                <a href="#eliExp" class="conten-center">
+                  <div class="col-4">
+                    <center><button class="btn btn-danger" onclick="traeOoculta('NuevaEl')">Eliminar</button></center>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <br>
+            <div id='NuevaEl' class="container" style="display:none;">
+              <center>
+                <h4> Agregar Nueva Experiencia laboral</h4>
+              </center>
+              <form action="/TP-NewExL" method="POST" enctype="multipart/form-data">
+                <div class="custom-file">
+                  <textarea class="form-control" id="TP-NE" name="TPNE" rows="1"
+                    placeholder="Nombre de Empresa"></textarea>
+                  <br>
+                  <textarea class="form-control" id="TP-CD" name="TPCD" rows="1"
+                    placeholder="Cargo Desempeñado"></textarea>
+                  <br>
+                  <textarea class="form-control" id="TP-TR" name="TPTR" rows="4"
+                    placeholder="Tareas Realizadas"></textarea>
+                  <br>
+                  <textarea class="form-control" id="TP-Lw" name="TPLW" rows="1" placeholder="link web"></textarea>
+                  <br>
+                  <textarea class="form-control" id="TP-lu" name="TPLU" rows="1"
+                    placeholder="link ubicacion"></textarea>
+                  <br>
+                  <label for="TP-imgEMP">Imagen de Empresa</label>
+                  <div class="custom-file">
+                    <input type="file" name="imagen" required>
+                  </div>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+              </form>
+              {{#if msg16}}
+              <strong>{{msg16}}!</strong>
+              {{/if}}
+              <br>
+              <div id='eliExp'>
+                <center>
+                  <h4> Eliminar Experiencia laboral</h4>
+                </center>
+                {{#each exLaboralDet}}
+                <form action="/TP-cargarDelete" method="POST">
+                  <div class="custom-file">
+                    <label for="nombre_emp">Nombre de Empresa</label>
+                    <textarea class="form-control" name="Empresa" rows="1">{{nombre_emp}}</textarea>
+                    <br>
+                    <label for="cargo_emp">Cargo ocupado</label>
+                    <textarea class="form-control" name="Cargo" rows="1">{{cargo_des}}</textarea>
+                    <label for="cargo_emp">id</label>
+                    <textarea class="form-control" name="id" rows="1" readonly>{{id}}</textarea>
+                    <br>
+                    <center><button type="submit" class="btn btn-danger">Eliminar</button></center>
+                </form>
+                {{/each}}
+                {{#if msg17}}
+                <strong>{{msg17}}!</strong>
+                {{/if}}
+              </div>
+              <br>
+              <div id='modExp'>
+                <center>
+                  <h4> Modificar Experiencia laboral</h4>
+                </center>
+                {{#each exLaboralDet}}
+                <form action="/TP-modificaEx" method="POST" enctype="multipart/form-data">
+                  <div class="custom-file">
+                    <label for="nombre_emp">Nombre de Empresa</label>
+                    <textarea class="form-control" id='TP_EMP' name="EMP" rows="1">{{nombre_emp}}</textarea>
+                    <br>
+                    <label for="cargo_emp">Cargo ocupado</label>
+                    <textarea class="form-control" id='TP_CAR' name="CAR" rows="1">{{cargo_des}}</textarea>
+                    <br>
+                    <label>ID</label>
+                    <textarea class="form-control" id="id" name="ID" rows="1" readonly>{{id}}</textarea>
+                    <br>
+                    <label>Tareas Realizadas</label>
+                    <textarea class="form-control" id="TP-TR" name="TR" rows="4">{{tareas_real}}</textarea>
+                    <br>
+                    <label>Link Web</label>
+                    <textarea class="form-control" id="TP-Lw" name="LW" rows="1">{{link_web}}</textarea>
+                    <br>
+                    <label>Link ubicacion</label>
+                    <textarea class="form-control" id="TP-lu" name="LU" rows="1">{{link_ubi}}</textarea>
+                    <br>
+                    <label for="TP-imgEMP">Imagen de Empresa</label>
+                    <div class="custom-file">
+                      <input type="file" name="imagen" required>
+                    </div>
+                    <center><button type="submit" class="btn btn-danger">subir</button></center>
+                </form>
+                {{/each}}
+                {{#if msg18}}
+                <strong>{{msg18}}!</strong>
+                {{/if}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  
- <label for="TP-imgEMP2">Imagen de institucion</label>
- <div class="custom-file">
-    <input type="file"  name="imagenIn" required> 
-  </div>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-
-{{#if msg20}}
-  <strong>{{msg20}}!</strong> 
-{{/if}} 
-              </div>
-              
-<br>
-
-
-<div id='elmEst'>
-      
-              <center><h4> Eliminar Estudio Realizado</h4></center>
-   {{#each estudiosRe}}
-   <form action="/TP-DeleteEstudio" method="POST">
-  <div class="custom-file">
-    <label for="">Nombre de Institucion</label>
-    <textarea class="form-control"  name="Empresa" rows="1">{{nombre_institucion}}</textarea>
-   <br>
-    <label for="">Titulo optenido</label>
-   <textarea class="form-control"  name="titulo" rows="1" >{{titulo_optenido}}</textarea>
-   <label for="cargo_emp">id</label>
-   <textarea class="form-control"  name="id" rows="1" readonly>{{id}}</textarea>
- <br>
- 
-<center><button type="submit" class="btn btn-danger">Eliminar</button></center>
-
-</form>
-{{/each}}
-{{#if msg21}}
-  <strong>{{msg21}}!</strong> 
-{{/if}} 
-              </div>
-           
-<br>
-
-
-<div id='modEst'>
-      
-              <center><h4> Modificar Estudios Realizados</h4></center>
-   {{#each estudiosRe}}
-    <form action="/TP-ModEsR" method="POST" enctype="multipart/form-data">
-  <div class="custom-file">
-    <textarea class="form-control"  name="TPNI" rows="1" required>{{nombre_institucion}}</textarea>
-   <br>
-   <textarea class="form-control"  name="TPTO" rows="1"  required>{{titulo_optenido}}</textarea>
- <br>
- <textarea class="form-control"  name="TPPE" rows="4" >{{perfil_egresado}}</textarea>
- <br>
- <textarea class="form-control"  name="TPDP" rows="1" >{{disiplina}}</textarea>
- <br>
- <textarea class="form-control"  name="TPLW" rows="1" >{{link_w}}</textarea>
- <br> 
- <textarea class="form-control" name="TPLU" rows="1" >{{link_u}}</textarea>
- <br> 
-  <textarea class="form-control" name="TPPC" rows="1" >{{periodo_curso}}</textarea>
- <br>
-  <textarea class="form-control" name="TPLC" rows="4" >{{link_c}}</textarea>
- <br>
- <label>id</label>
-   <textarea class="form-control"  name="id" rows="1" readonly>{{id}}</textarea>
-   <br>
- <label for="TP-imgEMP">Certificado</label>
- <div class="custom-file">
-    <input type="file"  name="imagen"> 
-  </div>
-  
- <label for="TP-imgEMP2">Imagen de institucion</label>
- <div class="custom-file">
-    <input type="file"  name="imagenIn" required> 
-  </div>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-{{/each}} 
-{{#if msg22}}
-  <strong>{{msg22}}!</strong> 
-{{/if}} 
-              </div>
-               </div>
-                
-
-
-
-
-
-
-
-     </div>
-              </div>
-              </div>
-              </div>
-              </div>
-            
-
 </section>
-
+<section id='estudiosR' class="divider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="precios-contenedor">
+          <div class="planes plan-basico">
+            <center>
+              <h4> Estudios Realizados</h4>
+            </center>
+            <center><button class="btn btn-danger" onclick="traeOoculta('EstudiosRContainer')">Expandir
+                estudios</button></center>
+            <div id="EstudiosRContainer" style="display:none;">
+              <br>
+              <form action="/TP-23-24" method="POST">
+                <div class="custom-file">
+                  <textarea class="form-control" id="TP-23" name="TPtwentytree" rows="1"
+                    placeholder="titulo en estudios realizados"></textarea>
+                  <br>
+                  <textarea class="form-control" id="TP-24" name="TPtwentyfour" rows="1"
+                    placeholder="descripcion del titulo en estudios realizados"></textarea>
+                  <br>
+                  <center><button type="submit" id="submit" class="btn btn-danger">subir</button></center>
+              </form>
+              {{#if msg19}}
+              <strong>{{msg19}}!</strong>
+              {{/if}}
+              <br><br>
+            </div>
+            <div class='container'>
+              <div class="row">
+                <a href="#modEst" class="conten-center">
+                  <div class='col-4'>
+                    <center><button class="btn btn-danger" onclick="traeOoculta('estudio1')">Modificar</button></center>
+                  </div>
+                </a>
+                <div class="col-4 conten-center">
+                  <center><button class="btn btn-danger" onclick="traeOoculta('estudio1')">Nuevo</button></center>
+                </div>
+                <a href="#elmEst" class="conten-center">
+                  <div class="col-4">
+                    <center><button class="btn btn-danger" onclick="traeOoculta('estudio1')">Eliminar</button></center>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <br>
+            <div id='estudio1' class="container" style="display:none;">
+              <div class="nueEst">
+                <center>
+                  <h4> Agregar Nuevo Estudio Realizado</h4>
+                </center>
+                <form action="/TP-NewEsR" method="POST" enctype="multipart/form-data">
+                  <div class="custom-file">
+                    <textarea class="form-control" name="TPNI" rows="1" placeholder="Nombre de la institucion"
+                      required></textarea>
+                    <br>
+                    <textarea class="form-control" name="TPTO" rows="1" placeholder="Titulo optenido"
+                      required></textarea>
+                    <br>
+                    <textarea class="form-control" name="TPPE" rows="4" placeholder="Perfil del egresado"></textarea>
+                    <br>
+                    <textarea class="form-control" name="TPDP" rows="1" placeholder="Disiplina"></textarea>
+                    <br>
+                    <textarea class="form-control" name="TPLW" rows="1" placeholder="link web"></textarea>
+                    <br>
+                    <textarea class="form-control" name="TPLU" rows="1" placeholder="link ubicacion"></textarea>
+                    <br>
+                    <textarea class="form-control" name="TPPC" rows="1" placeholder="Periodo cursado"></textarea>
+                    <br>
+                    <textarea class="form-control" name="TPLC" rows="1" placeholder="Etiqueta de ubicacion"></textarea>
+                    <br>
+                    <label for="TP-imgEMP">Certificado</label>
+                    <div class="custom-file">
+                      <input type="file" name="imagen">
+                    </div>
+                    <label for="TP-imgEMP2">Imagen de institucion</label>
+                    <div class="custom-file">
+                      <input type="file" name="imagenIn" required>
+                    </div>
+                    <center><button type="submit" class="btn btn-danger">subir</button></center>
+                </form>
+                {{#if msg20}}
+                <strong>{{msg20}}!</strong>
+                {{/if}}
+              </div>
+              <br>
+              <div id='elmEst'>
+                <center>
+                  <h4> Eliminar Estudio Realizado</h4>
+                </center>
+                {{#each estudiosRe}}
+                <form action="/TP-DeleteEstudio" method="POST">
+                  <div class="custom-file">
+                    <label for="">Nombre de Institucion</label>
+                    <textarea class="form-control" name="Empresa" rows="1">{{nombre_institucion}}</textarea>
+                    <br>
+                    <label for="">Titulo optenido</label>
+                    <textarea class="form-control" name="titulo" rows="1">{{titulo_optenido}}</textarea>
+                    <label for="cargo_emp">id</label>
+                    <textarea class="form-control" name="id" rows="1" readonly>{{id}}</textarea>
+                    <br>
+                    <center><button type="submit" class="btn btn-danger">Eliminar</button></center>
+                </form>
+                {{/each}}
+                {{#if msg21}}
+                <strong>{{msg21}}!</strong>
+                {{/if}}
+              </div>
+              <br>
+              <div id='modEst'>
+                <center>
+                  <h4> Modificar Estudios Realizados</h4>
+                </center>
+                {{#each estudiosRe}}
+                <form action="/TP-ModEsR" method="POST" enctype="multipart/form-data">
+                  <div class="custom-file">
+                    <textarea class="form-control" name="TPNI" rows="1" required>{{nombre_institucion}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="TPTO" rows="1" required>{{titulo_optenido}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="TPPE" rows="4">{{perfil_egresado}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="TPDP" rows="1">{{disiplina}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="TPLW" rows="1">{{link_w}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="TPLU" rows="1">{{link_u}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="TPPC" rows="1">{{periodo_curso}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="TPLC" rows="4">{{link_c}}</textarea>
+                    <br>
+                    <label>id</label>
+                    <textarea class="form-control" name="id" rows="1" readonly>{{id}}</textarea>
+                    <br>
+                    <label for="TP-imgEMP">Certificado</label>
+                    <div class="custom-file">
+                      <input type="file" name="imagen">
+                    </div>
+                    <label for="TP-imgEMP2">Imagen de institucion</label>
+                    <div class="custom-file">
+                      <input type="file" name="imagenIn" required>
+                    </div>
+                    <center><button type="submit" class="btn btn-danger">subir</button></center>
+                </form>
+                {{/each}}
+                {{#if msg22}}
+                <strong>{{msg22}}!</strong>
+                {{/if}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section id="aboutmeS" class="divider">
   <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="precios-contenedor">
-            <div class="planes plan-basico">
-              <center><h4> Acerca de mi</h4></center>
-              <br>
-              <center><button  class="btn btn-danger" onclick="traeOoculta('abuotmeE')">Expandir Acerca de mi</button></center>
-<br>  
-   <div id="abuotmeE"  style="display:none;">
-   <form action="/TP-25-26" method="POST" >
-  <div class="custom-file">
-    <textarea class="form-control" id="TP-25" name="TPtwentyfive" rows="1" placeholder="titulo Acerca de mi" required></textarea>
-   <br>
-   <textarea class="form-control" id="TP-26" name="TPtwentysix" rows="1" placeholder="descripcion del titulo Acerca de mi" required></textarea>
- <br>
-<center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-
-{{#if msg23}}
-  <strong>{{msg23}}!</strong> 
-{{/if}}
-</div>
-<br><br>
-<div class='container '>
-  <div class="row">
-  <a  class="conten-center"><div class='col-4'><center><button class="btn btn-danger"  onclick="traeOoculta('aboutme1')"><span>herramientas</span></button></center></div></a>   
-<a href="#aboutme2" class="conten-center"><div class="col-4"><center><button class="btn btn-danger" onclick="traeOoculta('aboutme1')"><span>recomendaciones</span></button></center></div></a>
-<a href="#aboutme3"class="conten-center"><div class="col-4"><center><button  class="btn btn-danger" onclick="traeOoculta('aboutme1')"><span>adicionales</span></button></center></div></a>
-</div>
-</div>
-<br>
-
-
-<div id='aboutme1' style="display:none;">
-  <center><h3>cargar herramienta</h3></center>
-  <br>
-<form action="/cargaherramienta" method="POST" enctype="multipart/form-data">
- <div class="custom-file">
- <textarea class="form-control" id="TP-27" name="TPtwentyseven" rows="1" placeholder="nombre de la herramienta" required></textarea>
- <br>
- 
-    <input type="file"  name="imagen"> 
-  </div>
-    <br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-<br>
-{{#if msg24 }}
-  <strong>{{msg24}}!</strong> 
-{{/if}}
-   <br>         
- <center><h3>Eliminar herramienta</h2></center>
-  <br>
-  {{#each HomeTwo}}
- <form action="/DeleteHerr" method="POST">
-  <div class="custom-file">
-    <label >Nombre de herramienta</label>
-    <textarea class="form-control"  name="nombre_herr" rows="1">{{valor_cfg}}</textarea>
-   <br>
-   <label for="cargo_emp">id</label>
-   <textarea class="form-control"  name="id" rows="1" readonly>{{id}}</textarea>
- <br>
- 
-<center><button type="submit" class="btn btn-danger">Eliminar</button></center>
-
-</form>
-{{/each}}
-{{#if msg25 }}
-  <strong>{{msg25}}!</strong> 
-{{/if}}
-
-  <div id='aboutme2'>
-      <br>         
- <center><h3>Cargar Referencia</h2></center>
-  <br>
-<form action="/cargarRef" method="POST" enctype="multipart/form-data">
- <div class="custom-file">
- <textarea class="form-control" id="TPnomR" name="TPnombreR" rows="1" placeholder="Nombre" required></textarea>
- <br>
- <textarea class="form-control" id="TPcarR" name="TPcargoR" rows="1" placeholder="Cargo" required></textarea>
- <br>
- <textarea class="form-control" id="TPrefR" name="TPreferenciaR" rows="1" placeholder="Referencia" required></textarea>
- <br>
- <textarea class="form-control" id="TPlinkR" name="TPlinkR" rows="1" placeholder="Link de contacto" required></textarea>
- <br>
- 
-    <input type="file"  name="imagen" required> 
-  </div>
-    <br><br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-<br>
-{{#if msg26 }}
-  <strong>{{msg26}}!</strong> 
-{{/if}}
-  <br>         
- <center><h3>Modificar Referencia</h2></center>
-  <br>
-{{#each treaRef}}
-<form action="/modificarRef" method="POST" enctype="multipart/form-data">
- <div class="custom-file">
- <textarea class="form-control" id="TPnomR" name="TPnombreR" rows="1" placeholder="Nombre" required>{{nombre_ref}}</textarea>
- <br>
- <textarea class="form-control" id="TPcarR" name="TPcargoR" rows="1" placeholder="Cargo" required>{{cargo_ref}}</textarea>
- <br>
- <textarea class="form-control" id="TPrefR" name="TPreferenciaR" rows="1" placeholder="Referencia" required>{{refencia}}</textarea>
- <br>
- <textarea class="form-control" id="TPlinkR" name="TPlinkR" rows="1" placeholder="Link de contacto" required>{{Link_ref}}</textarea>
- <br>
- <label>id</label>
-   <textarea class="form-control"  name="id" rows="1" readonly>{{id}}</textarea>
-   <br>
- 
-    <input type="file"  name="imagen" required> 
-  </div>
-    <br><br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-<br>
-{{/each}}
-{{#if msg27 }}
-  <strong>{{msg27}}!</strong> 
-{{/if}}
-
-    <br>         
- <center><h3>Eliminar Referencia</h2></center>
-  <br>
-{{#each treaRef}}
-<form action="/deleteRef" method="POST">
- <div class="custom-file">
- <textarea class="form-control" id="TPnomR" name="TPnombreR" rows="1" placeholder="Nombre" required>{{nombre_ref}}</textarea>
- <br>
- <textarea class="form-control" id="TPcarR" name="TPcargoR" rows="1" placeholder="Cargo" required>{{cargo_ref}}</textarea>
- <br>
-   <textarea class="form-control"  name="id" rows="1" readonly>{{id}}</textarea>
-    <br><br>
-  <center><button type="submit" class="btn btn-danger">Eliminar</button></center>
-</form>
-<br>
-{{/each}}
-{{#if msg28 }}
-  <strong>{{msg28}}!</strong> 
-{{/if}}
-</div>
-
-
-
-
-  <div id='aboutme3'>
-    <center><h3>Cargar adicional</h2></center>
-<form action="/cargarAdi" method="POST" enctype="multipart/form-data">
- <div class="custom-file">
- <textarea class="form-control"  name="descripcionG" rows="1" placeholder="descripcion general" required></textarea>
- <br>
- <textarea class="form-control"  name="link_u" rows="1" placeholder="link u"></textarea>
- <br>
- <textarea class="form-control"  name="descripcionU" rows="1" placeholder="descripcion link u" ></textarea>
- <br>
- <textarea class="form-control"  name="linkC" rows="1" placeholder="Link de contenido"></textarea>
- <br>
- <textarea class="form-control"  name="descripcionC" rows="1" placeholder="descripcion link c" ></textarea>
- <br>
- 
-    <input type="file"  name="imagen"> 
-  </div>
-    <br><br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-<br>
-{{#if msg29 }}
-  <strong>{{msg29}}!</strong> 
-{{/if}}
-
-
-
-<center><h3>Modficar Adicionala</h2></center>
-    {{#each traeAdic}}
-<form action="/modificaAdi" method="POST" enctype="multipart/form-data">
-<div class="custom-file">
- <textarea class="form-control"  name="descripcionG" rows="1"  required>{{descripcionG}}</textarea>
- <br>
- <textarea class="form-control"  name="link_u" rows="1" >{{link_u}}</textarea>
- <br>
- <textarea class="form-control"  name="descripcionU" rows="1">{{descripcionU}}</textarea>
- <br>
- <textarea class="form-control"  name="linkC" rows="1" >{{linkC}}</textarea>
- <br>
- <textarea class="form-control"  name="descripcionC" rows="1"  >{{descripcionC}}</textarea>
- <br>
- <textarea class="form-control"  name="id" rows="1"  readonly>{{id}}</textarea>
- <br>
- 
-    <input type="file"  name="imagen"> 
-  </div>
-    <br><br> <center><button type="submit" class="btn btn-danger">subir</button></center>
-</form>
-{{/each}}
-<br>
-{{#if msg30 }}
-  <strong>{{msg30}}!</strong> 
-{{/if}}
-
-      
- <center><h3>Eliminar Adicional</h2></center>
-{{#each traeAdic}}
-<form action="/eliminaAdi" method="POST" enctype="multipart/form-data">
- <div class="custom-file">
- <textarea class="form-control"  name="descripcionG" rows="1">{{descripcionG}}</textarea>
- <br>
- <textarea class="form-control"  name="link_u" rows="1" >{{link_u}}</textarea>
- <br>
- <textarea class="form-control"  name="linkC" rows="1" >{{linkC}}</textarea>
- <br>
- <textarea class="form-control"  name="id" rows="1" readonly >{{id}}</textarea>
- <br><br>
-  <center><button type="submit" class="btn btn-danger">eliminar</button></center>
-</form>
-{{/each}}
-<br>
-{{#if msg31 }}
-  <strong>{{msg31}}!</strong> 
-{{/if}}
-</div>
-
-
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section id='contact' class="divider">
-   <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="precios-contenedor">
-            <div class="planes plan-basico">
-              <center><h4>Contactame</h4></center>
-              <br>
-              <center><button  class="btn btn-danger" onclick="traeOoculta('contacto')">Expandir Contactame</button></center>
-              <br>
-              <div id="contacto" style="display: none;">
-<form action="/modificaContac" method="POST">
- <div class="custom-file">
- <textarea class="form-control"  name="descripcionCont" rows="1" placeholder="descripcion del apartado contacto"></textarea>
- <br>
-  <center><button type="submit" class="btn btn-danger">subir</button></center>
-  {{#if msg33 }}
-  <strong>{{msg33}}!</strong> 
-{{/if}}
-</form>
-  </div>
-    </div>
-      </div>
-        </div>
-          </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="precios-contenedor">
+          <div class="planes plan-basico">
+            <center>
+              <h4> Acerca de mi</h4>
+            </center>
+            <br>
+            <center><button class="btn btn-danger" onclick="traeOoculta('abuotmeE')">Expandir Acerca de mi</button>
+            </center>
+            <br>
+            <div id="abuotmeE" style="display:none;">
+              <form action="/TP-25-26" method="POST">
+                <div class="custom-file">
+                  <textarea class="form-control" id="TP-25" name="TPtwentyfive" rows="1"
+                    placeholder="titulo Acerca de mi" required></textarea>
+                  <br>
+                  <textarea class="form-control" id="TP-26" name="TPtwentysix" rows="1"
+                    placeholder="descripcion del titulo Acerca de mi" required></textarea>
+                  <br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+              </form>
+              {{#if msg23}}
+              <strong>{{msg23}}!</strong>
+              {{/if}}
             </div>
+            <br><br>
+            <div class='container '>
+              <div class="row">
+                <a class="conten-center">
+                  <div class='col-4'>
+                    <center><button class="btn btn-danger"
+                        onclick="traeOoculta('aboutme1')"><span>herramientas</span></button></center>
+                  </div>
+                </a>
+                <a href="#aboutme2" class="conten-center">
+                  <div class="col-4">
+                    <center><button class="btn btn-danger"
+                        onclick="traeOoculta('aboutme1')"><span>recomendaciones</span></button></center>
+                  </div>
+                </a>
+                <a href="#aboutme3" class="conten-center">
+                  <div class="col-4">
+                    <center><button class="btn btn-danger"
+                        onclick="traeOoculta('aboutme1')"><span>adicionales</span></button></center>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <br>
+            <div id='aboutme1' style="display:none;">
+              <center>
+                <h3>cargar herramienta</h3>
+              </center>
+              <br>
+              <form action="/cargaherramienta" method="POST" enctype="multipart/form-data">
+                <div class="custom-file">
+                  <textarea class="form-control" id="TP-27" name="TPtwentyseven" rows="1"
+                    placeholder="nombre de la herramienta" required></textarea>
+                  <br>
+                  <input type="file" name="imagen">
+                </div>
+                <br>
+                <center><button type="submit" class="btn btn-danger">subir</button></center>
+              </form>
+              <br>
+              {{#if msg24 }}
+              <strong>{{msg24}}!</strong>
+              {{/if}}
+              <br>
+              <center>
+                <h3>Eliminar herramienta</h2>
+              </center>
+              <br>
+              {{#each HomeTwo}}
+              <form action="/DeleteHerr" method="POST">
+                <div class="custom-file">
+                  <label>Nombre de herramienta</label>
+                  <textarea class="form-control" name="nombre_herr" rows="1">{{valor_cfg}}</textarea>
+                  <br>
+                  <label for="cargo_emp">id</label>
+                  <textarea class="form-control" name="id" rows="1" readonly>{{id}}</textarea>
+                  <br>
+                  <center><button type="submit" class="btn btn-danger">Eliminar</button></center>
+              </form>
+              {{/each}}
+              {{#if msg25 }}
+              <strong>{{msg25}}!</strong>
+              {{/if}}
+              <div id='aboutme2'>
+                <br>
+                <center>
+                  <h3>Cargar Referencia</h2>
+                </center>
+                <br>
+                <form action="/cargarRef" method="POST" enctype="multipart/form-data">
+                  <div class="custom-file">
+                    <textarea class="form-control" id="TPnomR" name="TPnombreR" rows="1" placeholder="Nombre"
+                      required></textarea>
+                    <br>
+                    <textarea class="form-control" id="TPcarR" name="TPcargoR" rows="1" placeholder="Cargo"
+                      required></textarea>
+                    <br>
+                    <textarea class="form-control" id="TPrefR" name="TPreferenciaR" rows="1" placeholder="Referencia"
+                      required></textarea>
+                    <br>
+                    <textarea class="form-control" id="TPlinkR" name="TPlinkR" rows="1" placeholder="Link de contacto"
+                      required></textarea>
+                    <br>
+                    <input type="file" name="imagen" required>
+                  </div>
+                  <br><br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+                </form>
+                <br>
+                {{#if msg26 }}
+                <strong>{{msg26}}!</strong>
+                {{/if}}
+                <br>
+                <center>
+                  <h3>Modificar Referencia</h2>
+                </center>
+                <br>
+                {{#each treaRef}}
+                <form action="/modificarRef" method="POST" enctype="multipart/form-data">
+                  <div class="custom-file">
+                    <textarea class="form-control" id="TPnomR" name="TPnombreR" rows="1" placeholder="Nombre"
+                      required>{{nombre_ref}}</textarea>
+                    <br>
+                    <textarea class="form-control" id="TPcarR" name="TPcargoR" rows="1" placeholder="Cargo"
+                      required>{{cargo_ref}}</textarea>
+                    <br>
+                    <textarea class="form-control" id="TPrefR" name="TPreferenciaR" rows="1" placeholder="Referencia"
+                      required>{{refencia}}</textarea>
+                    <br>
+                    <textarea class="form-control" id="TPlinkR" name="TPlinkR" rows="1" placeholder="Link de contacto"
+                      required>{{Link_ref}}</textarea>
+                    <br>
+                    <label>id</label>
+                    <textarea class="form-control" name="id" rows="1" readonly>{{id}}</textarea>
+                    <br>
+                    <input type="file" name="imagen" required>
+                  </div>
+                  <br><br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+                </form>
+                <br>
+                {{/each}}
+                {{#if msg27 }}
+                <strong>{{msg27}}!</strong>
+                {{/if}}
+                <br>
+                <center>
+                  <h3>Eliminar Referencia</h2>
+                </center>
+                <br>
+                {{#each treaRef}}
+                <form action="/deleteRef" method="POST">
+                  <div class="custom-file">
+                    <textarea class="form-control" id="TPnomR" name="TPnombreR" rows="1" placeholder="Nombre"
+                      required>{{nombre_ref}}</textarea>
+                    <br>
+                    <textarea class="form-control" id="TPcarR" name="TPcargoR" rows="1" placeholder="Cargo"
+                      required>{{cargo_ref}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="id" rows="1" readonly>{{id}}</textarea>
+                    <br><br>
+                    <center><button type="submit" class="btn btn-danger">Eliminar</button></center>
+                </form>
+                <br>
+                {{/each}}
+                {{#if msg28 }}
+                <strong>{{msg28}}!</strong>
+                {{/if}}
+              </div>
+              <div id='aboutme3'>
+                <center>
+                  <h3>Cargar adicional</h2>
+                </center>
+                <form action="/cargarAdi" method="POST" enctype="multipart/form-data">
+                  <div class="custom-file">
+                    <textarea class="form-control" name="descripcionG" rows="1" placeholder="descripcion general"
+                      required></textarea>
+                    <br>
+                    <textarea class="form-control" name="link_u" rows="1" placeholder="link u"></textarea>
+                    <br>
+                    <textarea class="form-control" name="descripcionU" rows="1"
+                      placeholder="descripcion link u"></textarea>
+                    <br>
+                    <textarea class="form-control" name="linkC" rows="1" placeholder="Link de contenido"></textarea>
+                    <br>
+                    <textarea class="form-control" name="descripcionC" rows="1"
+                      placeholder="descripcion link c"></textarea>
+                    <br>
+                    <input type="file" name="imagen">
+                  </div>
+                  <br><br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+                </form>
+                <br>
+                {{#if msg29 }}
+                <strong>{{msg29}}!</strong>
+                {{/if}}
+                <center>
+                  <h3>Modficar Adicionala</h2>
+                </center>
+                {{#each traeAdic}}
+                <form action="/modificaAdi" method="POST" enctype="multipart/form-data">
+                  <div class="custom-file">
+                    <textarea class="form-control" name="descripcionG" rows="1" required>{{descripcionG}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="link_u" rows="1">{{link_u}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="descripcionU" rows="1">{{descripcionU}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="linkC" rows="1">{{linkC}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="descripcionC" rows="1">{{descripcionC}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="id" rows="1" readonly>{{id}}</textarea>
+                    <br>
+                    <input type="file" name="imagen">
+                  </div>
+                  <br><br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+                </form>
+                {{/each}}
+                <br>
+                {{#if msg30 }}
+                <strong>{{msg30}}!</strong>
+                {{/if}}
+                <center>
+                  <h3>Eliminar Adicional</h2>
+                </center>
+                {{#each traeAdic}}
+                <form action="/eliminaAdi" method="POST" enctype="multipart/form-data">
+                  <div class="custom-file">
+                    <textarea class="form-control" name="descripcionG" rows="1">{{descripcionG}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="link_u" rows="1">{{link_u}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="linkC" rows="1">{{linkC}}</textarea>
+                    <br>
+                    <textarea class="form-control" name="id" rows="1" readonly>{{id}}</textarea>
+                    <br><br>
+                    <center><button type="submit" class="btn btn-danger">eliminar</button></center>
+                </form>
+                {{/each}}
+                <br>
+                {{#if msg31 }}
+                <strong>{{msg31}}!</strong>
+                {{/if}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
+<section id='contact' class="divider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="precios-contenedor">
+          <div class="planes plan-basico">
+            <center>
+              <h4>Contactame</h4>
+            </center>
+            <br>
+            <center><button class="btn btn-danger" onclick="traeOoculta('contacto')">Expandir Contactame</button>
+            </center>
+            <br>
+            <div id="contacto" style="display: none;">
+              <form action="/modificaContac" method="POST">
+                <div class="custom-file">
+                  <textarea class="form-control" name="descripcionCont" rows="1"
+                    placeholder="descripcion del apartado contacto"></textarea>
+                  <br>
+                  <center><button type="submit" class="btn btn-danger">subir</button></center>
+                  {{#if msg33 }}
+                  <strong>{{msg33}}!</strong>
+                  {{/if}}
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <script>
-  function traeOoculta(id){
-    if(document.getElementById(id).style.display=='none'){
-  document.getElementById(id).style.display = "block";
-    }else {document.getElementById(id).style.display = "none";}
+  function traeOoculta(id) {
+    if (document.getElementById(id).style.display == 'none') {
+      document.getElementById(id).style.display = "block";
+    } else { document.getElementById(id).style.display = "none"; }
   }
 </script>
