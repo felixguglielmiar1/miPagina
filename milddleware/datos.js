@@ -1,7 +1,7 @@
-var host = 'remotemysql.com'
-var user = '9A58XK5UhN'
-var password = 'PEGe6nuCvW'
-var database = '9A58XK5UhN'
+var host = ''
+var user = ''
+var password = ''
+var database = ''
 const nodemailer = require("nodemailer")
 
 let transporter = nodemailer.createTransport({
@@ -9,8 +9,8 @@ let transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: 'felixguglielmiar1@gmail.com',
-    pass: 'lkcucrlkroovvmqi',
+    user: '',
+    pass: '',
   },
 });
 try {
