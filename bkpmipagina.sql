@@ -175,7 +175,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 DELETE FROM `usuario`;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
 INSERT INTO `usuario` (`id`, `email`, `password`) VALUES
-	(1, 'felixguglielmiar1@gmail.com', '123456');
+	(1, '', '');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
